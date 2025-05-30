@@ -1,0 +1,22 @@
+<header class="py-2 w-full text-white relative">
+    <div class="flex flex-col md:flex-row items-center md:items-end justify-between">
+        <div class="md:pr-10">
+        {% set home = pages.find('/home')%}
+            <a href="{{ home.url }}">
+                <img class="h-20 lg:h-20 xl:h-32  w-auto" src="https://buzzboxz.com/assets/logo.png" alt=""/>
+            </a>
+        </div>
+        <ul class="flex items-center flex-wrap justify-center sm:justify-end">
+            {% for page in pages.children.visible %}
+                <li>
+                    <a href="{{ page.url }}"
+                        class=" uppercase text-lg xl:text-[1.35rem] text-gray hover:font-semibold px-3 xl:px-7 ">
+                    {{ page.menu }}
+                    </a>
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="md:-mt-1 md:ml-[61px] border-b-2 border-gray h-1 z-10"></div>
+</header>

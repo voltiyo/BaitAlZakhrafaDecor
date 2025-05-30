@@ -1,0 +1,35 @@
+title: Home Page
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        details:
+          type: tab
+          title: Page Settings
+
+          fields:
+            section1:
+              type: section
+              title: Page Settings
+              underline: true
+            header.page_title:
+              type: text
+              label: Page Title
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.MainImage:
+              type: file
+              accept: 
+                - image/*
+              label: Main Image
+              multiple: false
+              destination: 'theme://media'
+            header.MainImageAlt:
+              type: text
+              label: Image Alt
