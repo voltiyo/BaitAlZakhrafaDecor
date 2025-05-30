@@ -56,30 +56,17 @@ class __TwigTemplate_a0eccffa62eaaa80d26ea3a7efe0ad48630304836a2e3a981cf0247b1fb
             // line 10
             echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Plugin\Admin\Twig\AdminTwigExtension')->adminRouteFunc("/"), "html", null, true);
             echo "\">
-            ";
+            <img src=\"";
             // line 11
-            if (($context["custom_admin_logo"] ?? null)) {
-                // line 12
-                echo "                <img src=\"";
-                echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->urlFunc(($context["custom_admin_logo"] ?? null)), "html", null, true);
-                echo "\" title=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute(($context["site"] ?? null), "title", []), "html", null, true);
-                echo "\" />
-            ";
-            } else {
-                // line 14
-                echo "                ";
-                $this->loadTemplate("@admin-images/grav-small.svg", "partials/logo.html.twig", 14)->display($context);
-                // line 15
-                echo "                ";
-                $this->loadTemplate("@admin-images/grav-regular.svg", "partials/logo.html.twig", 15)->display($context);
-                // line 16
-                echo "            ";
-            }
-            // line 17
-            echo "        </a>
+            echo twig_escape_filter($this->env, ($context["base_url_absolute"] ?? null), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+            echo "/images/favicon.png\" title=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["site"] ?? null), "title", []), "html", null, true);
+            echo "\" />
+        </a>
         <a class=\"front-end hint--left\" data-hint=\"";
-            // line 18
+            // line 13
             echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->translate($this->env, "PLUGIN_ADMIN.VIEW_SITE_TIP"), "html", null, true);
             echo "\" target=\"_blank\" href=\"";
             echo twig_escape_filter($this->env, ($context["base_url_relative_frontend"] ?? null), "html", null, true);
@@ -101,7 +88,7 @@ class __TwigTemplate_a0eccffa62eaaa80d26ea3a7efe0ad48630304836a2e3a981cf0247b1fb
 
     public function getDebugInfo()
     {
-        return array (  83 => 18,  80 => 17,  77 => 16,  74 => 15,  71 => 14,  63 => 12,  61 => 11,  57 => 10,  52 => 9,  44 => 6,  39 => 4,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  70 => 13,  61 => 11,  57 => 10,  52 => 9,  44 => 6,  39 => 4,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -124,12 +111,7 @@ class __TwigTemplate_a0eccffa62eaaa80d26ea3a7efe0ad48630304836a2e3a981cf0247b1fb
 {% else %}
     <div class=\"admin-logo {{ custom_admin_logo ? 'custom-logo' : 'default-logo' }}\">
         <a href=\"{{ admin_route('/') }}\">
-            {% if custom_admin_logo %}
-                <img src=\"{{ url(custom_admin_logo) }}\" title=\"{{ site.title }}\" />
-            {% else %}
-                {% include('@admin-images/grav-small.svg') %}
-                {% include('@admin-images/grav-regular.svg') %}
-            {% endif %}
+            <img src=\"{{ base_url_absolute  }}/{{theme_url}}/images/favicon.png\" title=\"{{ site.title }}\" />
         </a>
         <a class=\"front-end hint--left\" data-hint=\"{{ \"PLUGIN_ADMIN.VIEW_SITE_TIP\"|t }}\" target=\"_blank\" href=\"{{ base_url_relative_frontend }}\"> <i class=\"fa fa-external-link\"></i></a>
     </div>

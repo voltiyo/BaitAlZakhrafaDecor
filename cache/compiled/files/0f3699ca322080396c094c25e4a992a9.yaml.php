@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/BaitAlZakhrafaDecor/user/config/system.yaml',
-    'modified' => 1748598798,
+    'modified' => 1748604804,
     'size' => 575,
     'data' => [
         'absolute_urls' => false,

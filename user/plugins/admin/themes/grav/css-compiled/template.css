@@ -2112,9 +2112,9 @@ table.noflex {
     right: 0;
     top: 0;
     width: 15px;
-    height: 4.2rem;
+    height: 6.2rem;
     text-align: center;
-    line-height: 4.2rem;
+    line-height: 6.2rem;
     font-size: 12px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px; }
@@ -2141,13 +2141,14 @@ table.noflex {
       width: 240px; } }
 
 #admin-logo {
-  height: 4.2rem;
+  height: 6.2rem;
   display: flex;
   align-items: center;
   justify-content: center; }
   #admin-logo.nav-hover .admin-logo {
     margin-right: 0; }
   #admin-logo .admin-logo {
+    width: 200px ;
     margin-right: -10px;
     display: flex;
     align-items: center; }

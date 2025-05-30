@@ -40,6 +40,10 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
         <link href=\"https://db.onlinewebfonts.com/a/fw7oF3E3\" rel=\"stylesheet\" type=\"text/css\"/>
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
+        <link rel=\"icon\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/media/logo.png\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
         <script src='/_debugbar/assets/javascript?v=1719601018' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval='false'>jQuery.noConflict(true);</script>
@@ -48,20 +52,20 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
     </head>
     <body class=\"font-sans antialiased bg-body-img\">
         ";
-        // line 18
-        $this->loadTemplate("./partials/navbar.html.twig", "contact.html.twig", 18)->display($context);
         // line 19
+        $this->loadTemplate("./partials/navbar.html.twig", "contact.html.twig", 19)->display($context);
+        // line 20
         echo "        <main class=\"w-full h-full\">
             <section class='w-full text-white'>
                 <div class=\"grid place-items-center text-white\">
                     <h3 class=\"text-4xl mb-7 \">";
-        // line 22
+        // line 23
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "MainTitle", []), "html", null, true);
         echo "</h3>
                 </div>
                 <div class=\"w-full h-full container grid grid-cols-1 sm:grid-cols-2 content-center gap-x-7 mt-7\">
                     <img class='h-auto w-full' src=\"";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/media/";
         echo twig_escape_filter($this->env, $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "location_image", [])), "name", []), "html", null, true);
@@ -70,19 +74,19 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
         echo "\">
                     <div class=\"w-full h-full flex justify-center flex-col\">
                         <h4 class=\"text-xl\">";
-        // line 27
+        // line 28
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "address", []);
         echo "</h4>
                         <h4 class=\"text-3xl\">Tel: ";
-        // line 28
+        // line 29
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "phone_number", []), "html", null, true);
         echo "</h4>
                         <h4 class=\"text-3xl\">Fax: ";
-        // line 29
+        // line 30
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "fax", []), "html", null, true);
         echo " </h4>
                         <h4 class=\"text-xl\">Email: ";
-        // line 30
+        // line 31
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "email", []), "html", null, true);
         echo "</h4>
                     </div>
@@ -90,9 +94,9 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
             </section>
         </main>
         ";
-        // line 35
-        $this->loadTemplate("./partials/footer.html.twig", "contact.html.twig", 35)->display($context);
         // line 36
+        $this->loadTemplate("./partials/footer.html.twig", "contact.html.twig", 36)->display($context);
+        // line 37
         echo "    </body>
 </html>";
     }
@@ -109,7 +113,7 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
 
     public function getDebugInfo()
     {
-        return array (  96 => 36,  94 => 35,  86 => 30,  82 => 29,  78 => 28,  74 => 27,  65 => 25,  59 => 22,  54 => 19,  52 => 18,  38 => 7,  30 => 1,);
+        return array (  100 => 37,  98 => 36,  90 => 31,  86 => 30,  82 => 29,  78 => 28,  69 => 26,  63 => 23,  58 => 20,  56 => 19,  45 => 11,  38 => 7,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -132,6 +136,7 @@ class __TwigTemplate_17fa0447670ac05a0147415699b0e8d0db16e4bae17a648e66789950b5d
         <link href=\"https://db.onlinewebfonts.com/a/fw7oF3E3\" rel=\"stylesheet\" type=\"text/css\"/>
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
+        <link rel=\"icon\" href=\"{{ theme_url }}/media/logo.png\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
         <script src='/_debugbar/assets/javascript?v=1719601018' data-turbolinks-eval='false' data-turbo-eval='false'></script><script data-turbo-eval='false'>jQuery.noConflict(true);</script>

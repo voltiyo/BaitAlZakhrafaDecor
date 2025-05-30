@@ -42,6 +42,10 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
@@ -51,34 +55,34 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
     </head>
     <body class=\"font-sans antialiased bg-body-img\">
         ";
-        // line 21
-        $this->loadTemplate("./partials/navbar.html.twig", "services.html.twig", 21)->display($context);
         // line 22
+        $this->loadTemplate("./partials/navbar.html.twig", "services.html.twig", 22)->display($context);
+        // line 23
         echo "        <main class=\"w-full h-full\">
             <section class='w-full container'>
                 <div class=\"grid place-items-center text-white my-5 sm:my-10\">
                     <h2 class=\"text-3xl\">";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "MainTitle", []), "html", null, true);
         echo "</h2>
                 </div>
                 <div class=\"text-white my-5 sm:my-10 grid gap-y-7 text-xl\">
                     ";
-        // line 28
+        // line 29
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "paragraphs", []));
         foreach ($context['_seq'] as $context["_key"] => $context["para"]) {
-            // line 29
+            // line 30
             echo "                        <div class=\"\">
                             <h3 class=\"text-primary text-lg font-semibold\">
                                 ";
-            // line 31
+            // line 32
             echo $this->getAttribute($context["para"], "header", []);
             echo "
                             </h3>
                             <p>
                                 ";
-            // line 34
+            // line 35
             echo $this->getAttribute($context["para"], "text", []);
             echo "
                             </p>
@@ -88,15 +92,15 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['para'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 39
         echo "                </div>
                 <div class=\"grid place-items-center gap-10\">
                     ";
-        // line 40
+        // line 41
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "images", []));
         foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-            // line 41
+            // line 42
             echo "                        <img class='w-auto h-full object-fill' src=\"";
             echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
             echo "/media/";
@@ -109,14 +113,14 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 43
+        // line 44
         echo "                </div>
             </section>
         </main>
         ";
-        // line 46
-        $this->loadTemplate("./partials/footer.html.twig", "services.html.twig", 46)->display($context);
         // line 47
+        $this->loadTemplate("./partials/footer.html.twig", "services.html.twig", 47)->display($context);
+        // line 48
         echo "    </body>
 </html>";
     }
@@ -133,7 +137,7 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
 
     public function getDebugInfo()
     {
-        return array (  120 => 47,  118 => 46,  113 => 43,  100 => 41,  96 => 40,  92 => 38,  82 => 34,  76 => 31,  72 => 29,  68 => 28,  62 => 25,  57 => 22,  55 => 21,  38 => 7,  30 => 1,);
+        return array (  124 => 48,  122 => 47,  117 => 44,  104 => 42,  100 => 41,  96 => 39,  86 => 35,  80 => 32,  76 => 30,  72 => 29,  66 => 26,  61 => 23,  59 => 22,  47 => 13,  38 => 7,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -158,6 +162,7 @@ class __TwigTemplate_86c493be667f848ffd4ade87d55f54496668a2f9f0e12057f8832b8f826
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"{{ theme_url }}/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>

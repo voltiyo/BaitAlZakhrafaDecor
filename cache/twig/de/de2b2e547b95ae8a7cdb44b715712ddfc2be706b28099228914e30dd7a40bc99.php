@@ -42,6 +42,10 @@ class __TwigTemplate_b240b8450fbe523772baeccc3bd7b1302e6bf9769050aa60f42f04e4735
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
@@ -51,14 +55,14 @@ class __TwigTemplate_b240b8450fbe523772baeccc3bd7b1302e6bf9769050aa60f42f04e4735
     </head>
     <body class=\"font-sans antialiased bg-body-img\">
         ";
-        // line 21
-        $this->loadTemplate("./partials/navbar.html.twig", "home.html.twig", 21)->display($context);
         // line 22
+        $this->loadTemplate("./partials/navbar.html.twig", "home.html.twig", 22)->display($context);
+        // line 23
         echo "        <main class=\"w-full h-full\">
             <section class='w-full h-[calc(100vh-14rem)] container'>
                 <div class=\"flex w-full h-full items-center justify-center\">
                     <img class='w-full h-full object-fill' alt=\"";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "MainImageAlt", []), "html", null, true);
         echo "\" src=\"";
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -69,9 +73,9 @@ class __TwigTemplate_b240b8450fbe523772baeccc3bd7b1302e6bf9769050aa60f42f04e4735
             </section>
         </main>
     ";
-        // line 29
-        $this->loadTemplate("./partials/footer.html.twig", "home.html.twig", 29)->display($context);
         // line 30
+        $this->loadTemplate("./partials/footer.html.twig", "home.html.twig", 30)->display($context);
+        // line 31
         echo "    </body>
 </html>";
     }
@@ -88,7 +92,7 @@ class __TwigTemplate_b240b8450fbe523772baeccc3bd7b1302e6bf9769050aa60f42f04e4735
 
     public function getDebugInfo()
     {
-        return array (  75 => 30,  73 => 29,  62 => 25,  57 => 22,  55 => 21,  38 => 7,  30 => 1,);
+        return array (  79 => 31,  77 => 30,  66 => 26,  61 => 23,  59 => 22,  47 => 13,  38 => 7,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -113,6 +117,7 @@ class __TwigTemplate_b240b8450fbe523772baeccc3bd7b1302e6bf9769050aa60f42f04e4735
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"{{ theme_url }}/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>

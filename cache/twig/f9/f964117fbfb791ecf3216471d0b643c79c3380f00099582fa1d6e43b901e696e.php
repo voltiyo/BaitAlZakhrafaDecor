@@ -42,6 +42,10 @@ class __TwigTemplate_43b9bd7ae1915414958c8ce57407589e39d41ebd1ed49c356c74d0c95d3
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
+        echo "/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
@@ -51,40 +55,40 @@ class __TwigTemplate_43b9bd7ae1915414958c8ce57407589e39d41ebd1ed49c356c74d0c95d3
     </head>
     <body class=\"font-sans antialiased bg-body-img\">
         ";
-        // line 21
-        $this->loadTemplate("./partials/navbar.html.twig", "about.html.twig", 21)->display($context);
         // line 22
+        $this->loadTemplate("./partials/navbar.html.twig", "about.html.twig", 22)->display($context);
+        // line 23
         echo "        <main class=\"w-full h-full\">
             <section class='w-full container'>
                 <div class=\"grid place-items-center text-white my-5 sm:my-10\">
                     <h2 class=\"text-3xl\">";
-        // line 25
+        // line 26
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "MainHeader", []);
         echo "</h2>
                     <p class=\"text-lg\">
                         ";
-        // line 27
+        // line 28
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "MainSubHeader", []);
         echo "
                     </p>
                 </div>
                 <div class=\"text-white my-5 sm:my-10 grid gap-y-7 text-xl\">
                     ";
-        // line 31
+        // line 32
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", []), "paragraphs", []));
         foreach ($context['_seq'] as $context["_key"] => $context["paragraph"]) {
-            // line 32
+            // line 33
             echo "                        <div class=\"\">
                             <h3 class=\"text-primary text-lg font-semibold\">
                                 ";
-            // line 34
+            // line 35
             echo $this->getAttribute($context["paragraph"], "header", []);
             echo "
                             </h3>
                             <p>
                                 ";
-            // line 37
+            // line 38
             echo $this->getAttribute($context["paragraph"], "text", []);
             echo "
                             </p>
@@ -94,14 +98,14 @@ class __TwigTemplate_43b9bd7ae1915414958c8ce57407589e39d41ebd1ed49c356c74d0c95d3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['paragraph'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 42
         echo "                </div>
             </section>
         </main>
         ";
-        // line 44
-        $this->loadTemplate("./partials/footer.html.twig", "about.html.twig", 44)->display($context);
         // line 45
+        $this->loadTemplate("./partials/footer.html.twig", "about.html.twig", 45)->display($context);
+        // line 46
         echo "    </body>
 </html>";
     }
@@ -118,7 +122,7 @@ class __TwigTemplate_43b9bd7ae1915414958c8ce57407589e39d41ebd1ed49c356c74d0c95d3
 
     public function getDebugInfo()
     {
-        return array (  105 => 45,  103 => 44,  98 => 41,  88 => 37,  82 => 34,  78 => 32,  74 => 31,  67 => 27,  62 => 25,  57 => 22,  55 => 21,  38 => 7,  30 => 1,);
+        return array (  109 => 46,  107 => 45,  102 => 42,  92 => 38,  86 => 35,  82 => 33,  78 => 32,  71 => 28,  66 => 26,  61 => 23,  59 => 22,  47 => 13,  38 => 7,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -143,6 +147,7 @@ class __TwigTemplate_43b9bd7ae1915414958c8ce57407589e39d41ebd1ed49c356c74d0c95d3
         <link rel=\"preload\" as=\"style\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <link rel=\"modulepreload\" href=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site--l2A_lvD.css\" />
+        <link rel=\"icon\" href=\"{{ theme_url }}/media/logo.png\" />
         <link rel=\"stylesheet\" href=\"https://buzzboxz.com/build/assets/site-C0wdRn1k.css\" />
         <script type=\"module\" src=\"https://buzzboxz.com/build/assets/site-5vEzzUX1.js\"></script>
         <link rel='stylesheet' type='text/css' property='stylesheet' href='/_debugbar/assets/stylesheets?v=1719601018&theme=auto' data-turbolinks-eval='false' data-turbo-eval='false'>
