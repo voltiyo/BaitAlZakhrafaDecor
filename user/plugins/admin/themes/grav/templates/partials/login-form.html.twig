@@ -1,4 +1,4 @@
-{% embed 'partials/login.html.twig' with {title: 'Grav Admin Login'} %}
+{% embed 'partials/login.html.twig' with {title: 'Admin Login'} %}
 
 {% block integration %}
 
@@ -16,7 +16,7 @@
     {% endembed %}
 
     <div class="form-actions primary-accent">
-        <a class="button secondary" href="{{ admin_route('/forgot') }}"><i class="fa fa-exclamation-circle"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN_FORGOT'|t }}</a>
+        {# <a class="button secondary" href="{{ admin_route('/forgot') }}"><i class="fa fa-exclamation-circle"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN_FORGOT'|t }}</a> #}
         <button type="submit" class="button primary" name="task" value="login"><i class="fa fa-sign-in"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN'|t }}</button>
     </div>
 

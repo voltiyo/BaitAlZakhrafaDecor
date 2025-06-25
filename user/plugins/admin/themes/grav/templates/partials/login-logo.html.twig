@@ -5,10 +5,6 @@
 {% else %}
     <h1 class="{{ custom_login_logo ? 'custom-logo' : 'default-logo' }}">
         {{ title }}
-        {% if custom_login_logo %}
-            <img src="{{ url(custom_login_logo) }}" title="Login" />
-        {% else %}
-            {% include('@admin-images/logo.svg') %}
-        {% endif %}
+        <img src="{{ base_url_absolute }}/{{ theme_url }}/images/favicon.png" title="Login" />
     </h1>
 {% endif %}

@@ -1,0 +1,46 @@
+title: Home Page
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        details:
+          type: tab
+          title: Page Settings
+
+          fields:
+            section1:
+              type: section
+              title: Page Settings
+              underline: true
+            header.page_title:
+              type: text
+              label: Page Title
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.project_name:
+              type: text
+              label: Project Name
+            header.project_preview:
+              type: file
+              multiple: false
+              label: Project Preview
+              destination: 'theme://media'
+              accept:
+                - image/*
+            header.project_images:
+              type: list
+              label: Project Images
+              fields:
+                .image:
+                  type: file
+                  label: Image
+                  multiple: false
+                  accept:
+                    - image/*
+                  destination: 'theme://media'

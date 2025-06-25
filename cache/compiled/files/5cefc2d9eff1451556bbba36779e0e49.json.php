@@ -2,49 +2,77 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/BaitAlZakhrafaDecor/user/data/flex/indexes/pages.json',
-    'modified' => 1748600640,
-    'size' => 1061,
+    'modified' => 1749205889,
+    'size' => 1553,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1748600640,
-        'count' => 5,
+        'timestamp' => 1749205889,
+        'count' => 7,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1748593167,
+                'storage_timestamp' => 1749204151,
                 'children' => [
-                    '02.home' => 1748592145,
-                    '03.about-us' => 1748593131,
-                    '04.services' => 1748593151,
-                    '05.contact' => 1748593167
+                    '02.home' => 1748598644,
+                    '03.about-us' => 1748599164,
+                    '03.projects' => 1749204151,
+                    '04.services' => 1748599907,
+                    '05.contact' => 1748600639
                 ],
-                'checksum' => 'e05c4adcfd9a86194068a46fcf8234e5'
+                'checksum' => 'd080e49f19ad3d934872652df6498278'
             ],
-            '02.home' => [
+            '01.home' => [
                 'key' => 'home',
-                'storage_key' => '02.home',
+                'storage_key' => '01.home',
                 'template' => 'home',
-                'storage_timestamp' => 1748598644,
+                'storage_timestamp' => 1749204151,
                 'markdown' => [
                     '' => [
                         'home' => 1748598644
                     ]
                 ],
-                'checksum' => '7a7b9c813f06b730c2f889a0ab56d165'
+                'checksum' => '9a2e7a57d085503ca302310638d015de'
             ],
-            '03.about-us' => [
+            '02.about-us' => [
                 'key' => 'about-us',
-                'storage_key' => '03.about-us',
+                'storage_key' => '02.about-us',
                 'template' => 'about',
-                'storage_timestamp' => 1748599164,
+                'storage_timestamp' => 1749204151,
                 'markdown' => [
                     '' => [
                         'about' => 1748599164
                     ]
                 ],
-                'checksum' => '1cd6c657d8af439c99e9e8082a1ecbb0'
+                'checksum' => '3fa23d425a627514c676e8203d0e25e3'
+            ],
+            '03.projects' => [
+                'key' => 'projects',
+                'storage_key' => '03.projects',
+                'template' => 'projects',
+                'storage_timestamp' => 1749204511,
+                'markdown' => [
+                    '' => [
+                        'projects' => 1749204105
+                    ]
+                ],
+                'children' => [
+                    'project-1' => 1749204511
+                ],
+                'checksum' => '9c93f2f7f84c4a64039c3b5f82f84fe8'
+            ],
+            '03.projects/project-1' => [
+                'key' => 'projects/project-1',
+                'storage_key' => '03.projects/project-1',
+                'template' => 'project',
+                'storage_timestamp' => 1749204695,
+                'markdown' => [
+                    '' => [
+                        'project' => 1749204695
+                    ]
+                ],
+                'checksum' => 'f59b56a68fbbad08a40641d3f5c3bd72'
             ],
             '04.services' => [
                 'key' => 'services',
@@ -62,13 +90,13 @@ return [
                 'key' => 'contact',
                 'storage_key' => '05.contact',
                 'template' => 'contact',
-                'storage_timestamp' => 1748600639,
+                'storage_timestamp' => 1749205889,
                 'markdown' => [
                     '' => [
-                        'contact' => 1748600639
+                        'contact' => 1749205889
                     ]
                 ],
-                'checksum' => 'eaf496d3c780c1d5b0b4b5e520d952b7'
+                'checksum' => '7ca1d1c86a5740f79e764c605eea14d3'
             ]
         ]
     ]

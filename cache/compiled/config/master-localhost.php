@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1748604806,
-    'checksum' => '157aefe2af9c5e34e932ecd5a6a13f5e',
+    'timestamp' => 1749204485,
+    'checksum' => '58f7387301c619b6b3719d01f90f3044',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,11 +15,11 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1730115083
+                'modified' => 1748701689
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1748604804
+                'modified' => 1749204483
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -3806,7 +3806,7 @@ node_modules'
             'salt' => 'W8wvsmBNpFU19I'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Bait Al Zakhrafa Decor',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Joe Bloggs',

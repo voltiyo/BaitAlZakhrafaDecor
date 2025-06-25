@@ -30,9 +30,9 @@
 {% endblock %}
 
 {% block widgets %}
-    {% if config.plugins.admin.notifications.dashboard %}
+    {# {% if config.plugins.admin.notifications.dashboard %}
     <div class="dashboard-notifications-container"></div>
-    {% endif %}
+    {% endif %} #}
 
     {# System notifications, cannot be turned off #}
     {% include 'partials/dashboard-problems.html.twig' %}

@@ -4,7 +4,7 @@ page_title: 'Contact | Bait Al Zakhrafa Decor'
 MainTitle: 'CONTACT US'
 phone_number: '+971 4 587 5781'
 fax: '+971 50 862 9872'
-email: info@baitalzakhrafa.ae
+email: info@baitalzakhrafadecoration.com
 address: "Dubai United Arab Emirates,\nHor AlAnz, AlWaheeda Street,\nArabilla Building, Office M50,"
 facebook_link: 'https://facebook.com/'
 twitter_link: 'https://x.com/'
